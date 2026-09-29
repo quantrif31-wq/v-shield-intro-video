@@ -1,0 +1,68 @@
+# V-Shield – Giải pháp quản lý an ninh thông minh cho doanh nghiệp
+
+## Trước khi ứng dụng V-Shield
+
+Một doanh nghiệp thông thường có cổng chính, khu vực gửi xe, đại sảnh tiếp tân và nhiều cửa dẫn đến các khu vực nội bộ riêng biệt.
+
+Tuy nhiên, việc quản lý an ninh theo phương pháp truyền thống còn tồn tại nhiều hạn chế:
+
+* Bãi giữ xe vận hành bằng sổ ghi chép hoặc thẻ giấy.
+* Thông tin khó tra cứu, thẻ xe dễ thất lạc và có nguy cơ xảy ra nhầm lẫn.
+* Việc kiểm soát các khu vực giới hạn phụ thuộc nhiều vào khả năng quan sát và phán đoán của nhân viên an ninh.
+* Người giả mạo có thể trà trộn hoặc xâm nhập vào khu vực không được phép.
+* Quá trình xác minh thủ công làm tăng thời gian chờ đợi và áp lực cho nhân viên.
+
+## Sau khi ứng dụng V-Shield
+
+V-Shield ứng dụng công nghệ nhận diện biển số và khuôn mặt để tự động hóa quy trình kiểm soát người và phương tiện ra vào doanh nghiệp.
+
+Tại khu vực gửi xe, hệ thống có khả năng:
+
+* Nhận diện biển số và khuôn mặt với tốc độ cao.
+* Tự động lưu trữ lịch sử ra vào.
+* Hỗ trợ tra cứu và truy vết thông tin nhanh chóng.
+* Nâng cao tốc độ xử lý tại cổng và giảm sai sót do thao tác thủ công.
+* Giúp nhân viên an ninh chuyển từ trực tiếp thực hiện từng thao tác sang theo dõi, giám sát và xử lý các trường hợp bất thường.
+
+V-Shield được xây dựng dựa trên nguyên tắc: người đưa phương tiện vào chỉ có thể đưa phương tiện đó ra hoặc ủy quyền cho người khác theo quy trình được hệ thống xác nhận.
+
+Cơ chế này giúp bảo vệ phương tiện hiệu quả nhưng không yêu cầu nhân viên phải đăng ký cố định một phương tiện duy nhất. Người dùng vẫn có thể linh hoạt sử dụng nhiều phương tiện khác nhau khi đến doanh nghiệp.
+
+Tại các khu vực nội bộ, V-Shield kết hợp công nghệ nhận diện khuôn mặt với cơ chế phân quyền chi tiết. Mỗi cá nhân chỉ được phép ra vào những khu vực phù hợp với vai trò và quyền hạn của mình. Nhờ đó, nhân viên có thể di chuyển thuận tiện trong phạm vi được cấp quyền, trong khi doanh nghiệp vẫn duy trì khả năng kiểm soát an ninh chặt chẽ.
+
+Đây mới chỉ là một phần trong những giá trị mà V-Shield có thể mang lại. Nếu bạn quan tâm đến sản phẩm hoặc mong muốn tìm hiểu sâu hơn, hãy liên hệ với đội ngũ sáng lập của chúng tôi.
+
+# Đội ngũ phát triển
+
+## Phạm Văn Thành (Raiden Shuga)
+
+**Mã sinh viên:** PI00336
+**Vị trí:** Trưởng nhóm phát triển ASDS2501, Backend Developer, AI Engineer
+
+**Vai trò và nhiệm vụ:**
+
+* Nghiên cứu, đề xuất và thiết kế mô hình hệ thống kết hợp giữa kiến trúc tập trung và phân tán.
+* Nghiên cứu, đề xuất và ứng dụng các công nghệ xử lý hình ảnh, nhận diện biển số và nhận diện khuôn mặt bằng AI.
+* Xây dựng lịch trình và kế hoạch cho các cuộc họp của nhóm.
+* Định hướng phát triển sản phẩm và theo dõi tiến độ thực hiện.
+* Điều phối công việc và hỗ trợ giải quyết xung đột giữa các thành viên.
+* Lập kế hoạch kiểm thử hệ thống trong từng giai đoạn phát triển.
+
+**Sở thích:** Anime, donghua, manga, manhua, manhwa, comic, Pop Ballad, rock, trinh thám, quân sự, kinh dị, khoa học viễn tưởng, trò chơi FPS, Kamen Rider, phong cách màu lạnh, thiên nhiên và ngủ nướng.
+
+## Phạm Ngọc Hoài Anh (Chúa tể Voucher)
+
+**Mã sinh viên:** PI01945
+**Vị trí:** Frontend Developer, DevOps, Tester
+
+**Vai trò và nhiệm vụ:**
+
+* Nghiên cứu, đề xuất và thiết kế giao diện trực quan, hiện đại, tối ưu trải nghiệm người dùng.
+* Xây dựng giao diện tương thích với máy tính, máy tính bảng và điện thoại.
+* Nghiên cứu, đề xuất và tích hợp các thiết bị ngoại vi phù hợp với hệ thống.
+* Lập kế hoạch và thực hiện kiểm thử trong từng giai đoạn phát triển.
+* Nghiên cứu, đề xuất và triển khai các giải pháp kiểm thử tự động.
+* Xây dựng bộ tài liệu hướng dẫn và tài liệu kỹ thuật đi kèm hệ thống.
+* Hỗ trợ triển khai, vận hành và theo dõi tính ổn định của sản phẩm.
+
+**Sở thích:** Khám phá các thiết bị và sản phẩm công nghệ, khám phá thiên nhiên, anime, manga và âm nhạc.

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V-Shield – Video Giới Thiệu Giải Pháp An Ninh Thông Minh (60s)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="studio-wrapper">
+    
+    <!-- Top Studio Header -->
+    <header class="studio-header">
+      <div class="brand-badge">
+        <svg class="icon-shield" viewBox="0 0 24 24">
+          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.12v4.7c0 4.54-3.13 8.78-7 9.88-3.87-1.1-7-5.34-7-9.88v-4.7l7-3.12zM12 6a4 4 0 0 0-4 4c0 1.94 1.4 3.54 3.25 3.92V16h1.5v-2.08c1.85-.38 3.25-1.98 3.25-3.92a4 4 0 0 0-4-4zm0 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/>
+        </svg>
+        <h1>V-SHIELD</h1>
+        <span>AI SMART SECURITY</span>
+      </div>
+
+      <div class="header-status">
+        <div class="status-live">
+          <div class="status-dot"></div>
+          <span>60 FPS ULTRA HD</span>
+        </div>
+        <div class="hud-tag">DỰ ÁN: ASDS2501</div>
+      </div>
+    </header>
+
+    <!-- Main Video Stage (16:9 Aspect Ratio) -->
+    <div class="video-stage-container" id="video-stage">
+      
+      <!-- Tech Grid & Vignette Layer -->
+      <div class="tech-grid-bg"></div>
+
+      <!-- Realtime Particle & Radar Canvas Layer -->
+      <canvas id="renderCanvas"></canvas>
+
+      <!-- HUD Top Brand Banner (Clean & Non-jittery) -->
+      <div class="video-hud-overlay">
+        <div class="hud-tag" id="hud-scene-title">V-SHIELD • HỆ THỐNG AN NINH THÔNG MINH // ASDS2501</div>
+      </div>
+
+      <!-- DOM Animated Scenes Layer (Occupies Middle Safe Zone) -->
+      <div class="scenes-container">
+
+        <!-- ==========================================
+             SCENE 1: GIỚI THIỆU & TỔNG QUAN DOANH NGHIỆP (0s - 10s)
+             ========================================== -->
+        <section class="scene active" id="scene-1">
+          <div class="scene-1-content">
+            
+            <div class="hero-shield-wrapper">
+              <div class="shield-radar-circle"></div>
+              <svg class="shield-svg-hero" viewBox="0 0 100 100">
+                <defs>
+                  <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff"/>
+                    <stop offset="50%" stop-color="#00f2fe"/>
+                    <stop offset="100%" stop-color="#00ff87"/>
+                  </linearGradient>
+                </defs>
+                <polygon points="50,5 92,22 92,54 50,95 8,54 8,22" fill="none" stroke="url(#shieldGrad)" stroke-width="4"/>
+                <polygon points="50,15 82,29 82,51 50,83 18,51 18,29" fill="rgba(0, 242, 254, 0.12)" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="4,2"/>
+                <circle cx="50" cy="42" r="10" fill="none" stroke="#fff" stroke-width="3"/>
+                <path d="M46 50 L42 66 L58 66 L54 50 Z" fill="#00ff87"/>
+              </svg>
+            </div>
+
+            <h1 class="scene-title-main">V-SHIELD</h1>
+            <p class="scene-subtitle-main">GIẢI PHÁP QUẢN LÝ AN NINH THÔNG MINH CHO DOANH NGHIỆP</p>
+
+            <!-- 4 Architecture Enterprise Zones -->
+            <div class="enterprise-zones-grid">
+              
+              <div class="zone-card" id="zone-1">
+                <span class="zone-status-badge">ZONE 01</span>
+                <div class="zone-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                    <circle cx="12" cy="5" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="zone-name">CỔNG CHÍNH</div>
+                <div class="zone-desc">Kiểm soát xe cộ & người ra vào tự động</div>
+              </div>
+
+              <div class="zone-card" id="zone-2">
+                <span class="zone-status-badge">ZONE 02</span>
+                <div class="zone-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="13" rx="2"></rect>
+                    <path d="M16 11l-4 4-4-4"></path>
+                  </svg>
+                </div>
+                <div class="zone-name">BÃI GỬI XE</div>
+                <div class="zone-desc">Lưu trữ lịch sử, chống thất lạc xe</div>
+              </div>
+
+              <div class="zone-card" id="zone-3">
+                <span class="zone-status-badge">ZONE 03</span>
+                <div class="zone-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                </div>
+                <div class="zone-name">ĐẠI SẢNH TIẾP TÂN</div>
+                <div class="zone-desc">Đón tiếp & điều phối luồng người nhanh chóng</div>
+              </div>
+
+              <div class="zone-card" id="zone-4">
+                <span class="zone-status-badge">ZONE 04</span>
+                <div class="zone-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                    <rect x="9" y="9" width="6" height="6"></rect>
+                  </svg>
+                </div>
+                <div class="zone-name">KHU VỰC NỘI BỘ</div>
+                <div class="zone-desc">Phòng Server, R&D phân quyền nghiêm ngặt</div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ==========================================
+             SCENE 2: HIỆN TRẠNG & BẤT CẬP TRUYỀN THỐNG (10s - 22s)
+             ========================================== -->
+        <section class="scene" id="scene-2">
+          <div class="scene-2-container">
+            
+            <div class="scene-header-bar">
+              <h2>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--red)">
+                  <path d="M12 2L1 21h22L12 2zm0 3.45L20.15 19H3.85L12 5.45zM11 10h2v4h-2zm0 5h2v2h-2z"/>
+                </svg>
+                HIỆN TRẠNG: THÁCH THỨC QUẢN LÝ AN NINH TRUYỀN THỐNG
+              </h2>
+              <div class="tag-alert">RỦI RO CAO / THỦ CÔNG</div>
+            </div>
+
+            <div class="split-issues-grid">
+              
+              <!-- Issue 1: Bãi xe thủ công -->
+              <div class="issue-box">
+                <div class="issue-title">
+                  <span>🚗</span> 1. Bãi giữ xe: Sổ ghi chép & Thẻ giấy
+                </div>
+                <div class="sim-traditional-parking">
+                  <svg class="queue-cars-svg" viewBox="0 0 400 110" id="svg-car-queue">
+                    <!-- Security Booth -->
+                    <rect x="15" y="25" width="65" height="70" rx="4" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+                    <rect x="25" y="35" width="45" height="22" fill="#60a5fa" opacity="0.3"/>
+                    <text x="47" y="50" fill="#94a3b8" font-size="9" text-anchor="middle">BẢO VỆ</text>
+                    <!-- Manual notebook & paper ticket -->
+                    <rect x="28" y="65" width="16" height="22" fill="#f8fafc" stroke="#dc2626"/>
+                    <line x1="31" y1="70" x2="41" y2="70" stroke="#991b1b" stroke-width="1.5"/>
+                    <line x1="31" y1="74" x2="41" y2="74" stroke="#991b1b" stroke-width="1.5"/>
+                    <line x1="31" y1="78" x2="38" y2="78" stroke="#991b1b" stroke-width="1.5"/>
+
+                    <!-- Queue of cars waiting -->
+                    <g transform="translate(95, 38)">
+                      <rect x="0" y="15" width="75" height="32" rx="5" fill="#475569" stroke="#94a3b8"/>
+                      <polygon points="12,15 25,0 52,0 65,15" fill="#334155"/>
+                      <circle cx="18" cy="47" r="9" fill="#1e293b" stroke="#64748b"/>
+                      <circle cx="56" cy="47" r="9" fill="#1e293b" stroke="#64748b"/>
+                      <text x="37" y="34" fill="#cbd5e1" font-size="8.5" text-anchor="middle">XE ĐỢI 1</text>
+                    </g>
+
+                    <g transform="translate(190, 38)">
+                      <rect x="0" y="15" width="75" height="32" rx="5" fill="#334155" stroke="#64748b"/>
+                      <polygon points="12,15 25,0 52,0 65,15" fill="#1e293b"/>
+                      <circle cx="18" cy="47" r="9" fill="#1e293b"/>
+                      <circle cx="56" cy="47" r="9" fill="#1e293b"/>
+                      <text x="37" y="34" fill="#94a3b8" font-size="8.5" text-anchor="middle">XE ĐỢI 2</text>
+                    </g>
+
+                    <g transform="translate(285, 38)">
+                      <rect x="0" y="15" width="75" height="32" rx="5" fill="#1e293b" stroke="#475569"/>
+                      <circle cx="18" cy="47" r="9" fill="#0f172a"/>
+                      <circle cx="56" cy="47" r="9" fill="#0f172a"/>
+                      <text x="37" y="34" fill="#64748b" font-size="8.5" text-anchor="middle">XE ĐỢI 3...</text>
+                    </g>
+
+                    <!-- Lost ticket warning text -->
+                    <g transform="translate(100, 18)">
+                      <text x="0" y="0" fill="#ef4444" font-size="14" font-weight="bold">❌ MẤT THẺ / ÙN TẮC!</text>
+                    </g>
+                  </svg>
+                </div>
+
+                <ul class="issue-bullet-list">
+                  <li>Sổ sách giấy dễ rách, thất lạc và khó tra cứu dữ liệu.</li>
+                  <li>Thẻ giấy có nguy cơ nhầm lẫn và kẻ gian lấy cắp phương tiện.</li>
+                  <li>Xác minh thủ công kéo dài thời gian chờ đợi tại cổng.</li>
+                </ul>
+              </div>
+
+              <!-- Issue 2: Lỗ hổng kiểm soát người lạ -->
+              <div class="issue-box">
+                <div class="issue-title">
+                  <span>🥷</span> 2. Khu vực nội bộ: Phụ thuộc cảm tính
+                </div>
+
+                <div class="sim-security-breach">
+                  <div class="warning-breach-stamp">NGUY CƠ XÂM NHẬP!</div>
+                  <svg class="breach-scene-svg" viewBox="0 0 400 110">
+                    <!-- Desk -->
+                    <rect x="15" y="35" width="90" height="55" rx="4" fill="#1e293b" stroke="#475569"/>
+                    <text x="60" y="65" fill="#94a3b8" font-size="8.5" text-anchor="middle">BÀN TIẾP TÂN</text>
+
+                    <!-- Guard Distracted -->
+                    <circle cx="60" cy="24" r="9" fill="#64748b"/>
+                    <text x="60" y="13" fill="#ef4444" font-size="7.5" text-anchor="middle">😴 Quá tải</text>
+
+                    <!-- Restricted Zone Door -->
+                    <rect x="290" y="10" width="75" height="85" rx="4" fill="#0f172a" stroke="#ef4444" stroke-width="2"/>
+                    <text x="327" y="40" fill="#f87171" font-size="8.5" text-anchor="middle" font-weight="bold">SERVER ROOM</text>
+                    <text x="327" y="60" fill="#ef4444" font-size="7.5" text-anchor="middle">[CẤM VÀO]</text>
+
+                    <!-- Intruder Sneaking -->
+                    <g id="svg-intruder" transform="translate(40, 0)">
+                      <circle cx="160" cy="45" r="10" fill="#dc2626"/>
+                      <path d="M149 70 C149 58 171 58 171 70 Z" fill="#991b1b"/>
+                      <path d="M153 43 Q160 38 167 43" stroke="#111" stroke-width="2" fill="none"/>
+                      <text x="160" y="86" fill="#fca5a5" font-size="7.5" text-anchor="middle">Kẻ gian giả mạo</text>
+                    </g>
+                  </svg>
+                </div>
+
+                <ul class="issue-bullet-list">
+                  <li>Kiểm soát phụ thuộc vào khả năng quan sát của bảo vệ.</li>
+                  <li>Kẻ giả mạo dễ dàng trà trộn vào các khu vực không được phép.</li>
+                  <li>Áp lực lớn cho nhân viên và tiềm ẩn rủi ro an ninh nghiêm trọng.</li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ==========================================
+             SCENE 3: ĐỘT PHÁ CÔNG NGHỆ V-SHIELD (22s - 40s)
+             ========================================== -->
+        <section class="scene" id="scene-3">
+          <div class="scene-3-container">
+            
+            <div class="scene-header-smart">
+              <h2>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--cyan)">
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.59L8.41 12 9.83 10.59 13 13.76l5.17-5.17L19.59 10z"/>
+                </svg>
+                V-SHIELD: AI NHẬN DIỆN BIỂN SỐ & KHUÔN MẶT SIÊU TỐC
+              </h2>
+              <div class="speed-badge">⚡ XỬ LÝ: &lt; 0.2 GIÂY</div>
+            </div>
+
+            <!-- Smart Gate Simulation SVG -->
+            <div class="smart-gate-sim">
+              
+              <!-- Floating AI Scan HUD -->
+              <div class="ai-scan-hud-panel">
+                <div class="hud-scan-row">
+                  <span class="label">TRẠNG THÁI:</span>
+                  <span class="val" id="hud-status-val">AI ĐANG QUÉT...</span>
+                </div>
+                <div class="hud-scan-row">
+                  <span class="label">KHUÔN MẶT:</span>
+                  <span class="val">99.8% (XÁC THỰC)</span>
+                </div>
+                <div class="hud-scan-row">
+                  <span class="label">BIỂN SỐ XE:</span>
+                  <span class="val-plate">30A-999.88</span>
+                </div>
+                <div class="hud-scan-row">
+                  <span class="label">ĐỒNG BỘ:</span>
+                  <span class="val">CLOUD SERVER</span>
+                </div>
+              </div>
+
+              <!-- Interactive Gate SVG -->
+              <svg class="smart-gate-svg" viewBox="0 0 700 260">
+                <defs>
+                  <linearGradient id="roadGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#0f172a"/>
+                    <stop offset="100%" stop-color="#020617"/>
+                  </linearGradient>
+                  <linearGradient id="carGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#0284c7"/>
+                    <stop offset="100%" stop-color="#00f2fe"/>
+                  </linearGradient>
+                  <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="5" result="blur"/>
+                    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                  </filter>
+                </defs>
+
+                <!-- Road Surface -->
+                <rect x="0" y="150" width="700" height="110" fill="url(#roadGrad)"/>
+                <line x1="0" y1="205" x2="700" y2="205" stroke="#00f2fe" stroke-dasharray="25,20" stroke-width="2" opacity="0.3"/>
+
+                <!-- Smart Camera AI Pillar -->
+                <rect x="330" y="35" width="16" height="135" fill="#1e293b" stroke="#00f2fe" stroke-width="1.5"/>
+                <polygon points="320,35 356,35 350,60 326,60" fill="#0369a1"/>
+                <circle cx="338" cy="48" r="5" fill="#00ff87" filter="url(#cyanGlow)"/>
+
+                <!-- Laser scanning beam -->
+                <line id="svg-laser-beam" x1="200" y1="120" x2="338" y2="48" stroke="#00ff87" stroke-width="2.5" opacity="0" filter="url(#cyanGlow)"/>
+
+                <!-- Barrier Housing & Arm -->
+                <rect x="350" y="115" width="22" height="65" rx="3" fill="#0f172a" stroke="#00ff87" stroke-width="2"/>
+                <circle cx="361" cy="128" r="5" fill="#00ff87"/>
+
+                <!-- Barrier Arm (Rotatable) -->
+                <g id="svg-barrier-arm" transform="rotate(0, 361, 128)">
+                  <rect x="361" y="125" width="135" height="7" rx="2" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+                  <line x1="380" y1="125" x2="380" y2="132" stroke="#fff" stroke-width="3"/>
+                  <line x1="410" y1="125" x2="410" y2="132" stroke="#fff" stroke-width="3"/>
+                  <line x1="440" y1="125" x2="440" y2="132" stroke="#fff" stroke-width="3"/>
+                  <line x1="470" y1="125" x2="470" y2="132" stroke="#fff" stroke-width="3"/>
+                </g>
+
+                <!-- Smart Electric Car -->
+                <g id="svg-smart-car" transform="translate(-120, 0)">
+                  <ellipse cx="220" cy="215" rx="75" ry="11" fill="#000" opacity="0.6"/>
+                  <path d="M140 200 L155 175 L185 155 L255 155 L285 175 L300 200 Z" fill="url(#carGrad)" stroke="#00f2fe" stroke-width="2"/>
+                  <polygon points="188 158 200 175 240 175 250 158" fill="#0f172a" opacity="0.85"/>
+                  <circle cx="218" cy="166" r="6" fill="#f8fafc"/>
+
+                  <circle cx="175" cy="200" r="14" fill="#0f172a" stroke="#00f2fe" stroke-width="2"/>
+                  <circle cx="175" cy="200" r="5" fill="#00ff87"/>
+                  <circle cx="265" cy="200" r="14" fill="#0f172a" stroke="#00f2fe" stroke-width="2"/>
+                  <circle cx="265" cy="200" r="5" fill="#00ff87"/>
+
+                  <polygon points="298 188 335 180 335 210 298 196" fill="rgba(0, 242, 254, 0.25)"/>
+
+                  <rect x="278" y="190" width="32" height="11" rx="2" fill="#ffffff" stroke="#0f172a" stroke-width="1"/>
+                  <text x="294" y="198" fill="#0f172a" font-size="4.5" font-family="monospace" font-weight="900" letter-spacing="-0.3" text-anchor="middle">30A-999.88</text>
+
+                  <g id="svg-face-target" opacity="0">
+                    <rect x="210" y="158" width="16" height="16" fill="none" stroke="#00ff87" stroke-width="1.5"/>
+                    <text x="218" y="154" fill="#00ff87" font-size="7" font-family="var(--font-tech)" text-anchor="middle">FACE OK</text>
+                  </g>
+
+                  <g id="svg-plate-target" opacity="0">
+                    <rect x="274" y="187" width="40" height="17" rx="3" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="3,2"/>
+                    <text x="294" y="213" fill="#00f2fe" font-size="7.5" font-family="var(--font-tech)" font-weight="bold" text-anchor="middle">LPR MATCH</text>
+                  </g>
+                </g>
+
+              </svg>
+            </div>
+
+            <!-- Core Value Highlight Cards -->
+            <div class="smart-features-row">
+              
+              <div class="feature-pill-card">
+                <div class="feature-pill-icon">🔐</div>
+                <div>
+                  <div class="feature-pill-title">NGUYÊN TẮC: VÀO = RA</div>
+                  <div class="feature-pill-desc">Ai đưa xe vào chỉ người đó đưa ra hoặc ủy quyền số.</div>
+                </div>
+              </div>
+
+              <div class="feature-pill-card">
+                <div class="feature-pill-icon">🔄</div>
+                <div>
+                  <div class="feature-pill-title">LINH HOẠT PHƯƠNG TIỆN</div>
+                  <div class="feature-pill-desc">Không ép đăng ký xe cố định, tự do đổi xe an toàn.</div>
+                </div>
+              </div>
+
+              <div class="feature-pill-card">
+                <div class="feature-pill-icon">💻</div>
+                <div>
+                  <div class="feature-pill-title">GIÁM SÁT DASHBOARD AI</div>
+                  <div class="feature-pill-desc">Bảo vệ theo dõi và xử lý các trường hợp bất thường.</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ==========================================
+             SCENE 4: PHÂN QUYỀN NỘI BỘ (40s - 50s)
+             ========================================== -->
+        <section class="scene" id="scene-4">
+          <div class="scene-4-container">
+            
+            <div class="scene-header-smart">
+              <h2>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--green)">
+                  <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                </svg>
+                KIỂM SOÁT KHU VỰC NỘI BỘ: FACE ID & PHÂN QUYỀN
+              </h2>
+              <div class="hud-tag">MULTI-LEVEL ACCESS CONTROL</div>
+            </div>
+
+            <div class="access-control-grid">
+              
+              <!-- Case 1: Hợp lệ (Granted) -->
+              <div class="access-case-card granted">
+                <div class="access-card-header">
+                  <h3 style="color: var(--green); font-family: var(--font-tech); font-size: 0.95rem;">TRƯỜNG HỢP: NHÂN VIÊN ĐƯỢC CẤP QUYỀN</h3>
+                  <span class="case-badge granted">ACCESS GRANTED ✓</span>
+                </div>
+
+                <div class="case-sim-area">
+                  <svg class="turnstile-svg" viewBox="0 0 320 110">
+                    <rect x="20" y="10" width="280" height="90" fill="#0f172a" stroke="#1e293b"/>
+                    <!-- Smart Glass Doors -->
+                    <rect id="svg-door-left" x="110" y="18" width="48" height="74" rx="3" fill="rgba(0, 255, 135, 0.25)" stroke="#00ff87" stroke-width="2"/>
+                    <rect id="svg-door-right" x="162" y="18" width="48" height="74" rx="3" fill="rgba(0, 255, 135, 0.25)" stroke="#00ff87" stroke-width="2"/>
+
+                    <!-- Wall Scanner -->
+                    <rect x="90" y="40" width="12" height="22" rx="2" fill="#00ff87"/>
+                    <line x1="96" y1="51" x2="60" y2="51" stroke="#00ff87" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+                    <!-- Staff Figure -->
+                    <g id="svg-staff-person" transform="translate(0, 0)">
+                      <circle cx="50" cy="40" r="9" fill="#00ff87"/>
+                      <path d="M38 68 C38 54 62 54 62 68 Z" fill="#047857"/>
+                    </g>
+                  </svg>
+
+                  <div class="id-badge-overlay">
+                    <div class="id-face-mock">👤</div>
+                    <div class="id-details">
+                      <span class="name">Lê Thùy Dung</span>
+                      <span class="role">Trưởng phòng R&D • Quyền Hạn: Level 3 (Full Access)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Case 2: Xâm nhập / Không phận sự (Denied) -->
+              <div class="access-case-card denied">
+                <div class="access-card-header">
+                  <h3 style="color: var(--red); font-family: var(--font-tech); font-size: 0.95rem;">TRƯỜNG HỢP: KHÔNG ĐỦ THẨM QUYỀN / NGƯỜI LẠ</h3>
+                  <span class="case-badge denied">ACCESS DENIED ✗</span>
+                </div>
+
+                <div class="case-sim-area">
+                  <svg class="turnstile-svg" viewBox="0 0 320 110">
+                    <rect x="20" y="10" width="280" height="90" fill="#120c10" stroke="#331118"/>
+                    <rect x="110" y="18" width="48" height="74" rx="3" fill="rgba(255, 42, 95, 0.3)" stroke="#ff2a5f" stroke-width="2.5"/>
+                    <rect x="162" y="18" width="48" height="74" rx="3" fill="rgba(255, 42, 95, 0.3)" stroke="#ff2a5f" stroke-width="2.5"/>
+
+                    <circle cx="160" cy="50" r="11" fill="#ff2a5f"/>
+                    <path d="M156 50 L164 50 L164 57 L156 57 Z" fill="#fff"/>
+
+                    <rect x="90" y="40" width="12" height="22" rx="2" fill="#ff2a5f"/>
+                    <line x1="96" y1="51" x2="60" y2="51" stroke="#ff2a5f" stroke-width="1.5"/>
+
+                    <g id="svg-denied-person" transform="translate(0, 0)">
+                      <circle cx="50" cy="40" r="9" fill="#ff2a5f"/>
+                      <path d="M38 68 C38 54 62 54 62 68 Z" fill="#881337"/>
+                    </g>
+                  </svg>
+
+                  <div class="id-badge-overlay" style="border-color: rgba(255, 42, 95, 0.4);" id="denied-alert-indicator">
+                    <div class="id-face-mock" style="background: rgba(255, 42, 95, 0.2); color: var(--red);">⛔</div>
+                    <div class="id-details">
+                      <span class="name" style="color: #ff859e;">ĐỐI TƯỢNG KHÔNG XÁC ĐỊNH</span>
+                      <span class="role" style="color: var(--red);">Cửa khóa tức thì • Báo động trung tâm an ninh</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ==========================================
+             SCENE 5: ĐỘI NGŨ PHÁT TRIỂN & KẾT THÚC (50s - 60s)
+             3 GIAI ĐOẠN: Thành (50-53s) -> Hoài Anh (53-56s) -> Hội tụ ASDS2501 (56-60s)
+             ========================================== -->
+        <section class="scene" id="scene-5">
+          <div class="scene-5-container">
+            
+            <div class="scene-5-header" id="scene-5-header">
+              <div class="team-sub-badge" id="team-sub-badge">BAN SÁNG LẬP V-SHIELD</div>
+              <h2 id="scene-5-title">ĐỘI NGŨ SÁNG LẬP & PHÁT TRIỂN HỆ THỐNG</h2>
+              <p id="scene-5-desc">DỰ ÁN ASDS2501 – CÔNG NGHỆ BẢO MẬT & TRÍ TUỆ NHÂN TẠO TƯƠNG LAI</p>
+            </div>
+
+            <!-- Stage area for Member 1, Member 2 and Team Formation -->
+            <div class="team-stage-wrapper" id="team-stage-wrapper">
+              
+              <!-- Member 1: Phạm Văn Thành (Raiden Shuga) -->
+              <div class="member-holo-card card-shuga" id="card-member-1">
+                <div class="card-energy-aura aura-blue"></div>
+                <div class="member-photo-frame frame-blue">
+                  <img src="PI00336.jpg" alt="Phạm Văn Thành" id="photo-img-1" class="member-photo-img">
+                  <div class="photo-scan-line line-blue"></div>
+                  <div class="photo-badge-overlay">AI & BACKEND</div>
+                </div>
+
+                <div class="member-info">
+                  <div class="member-header-row">
+                    <span class="member-id-tag tag-blue">MSSV: PI00336</span>
+                    <span class="member-specialty">HỆ THỐNG PHÂN TÁN & AI</span>
+                  </div>
+                  <div class="member-name">PHẠM VĂN THÀNH</div>
+                  <div class="member-alias">Codename: <span>Raiden Shuga</span></div>
+                  <div class="member-role">Trưởng nhóm ASDS2501 • Backend Developer • AI Engineer</div>
+                  <ul class="member-tasks">
+                    <li>Nghiên cứu kiến trúc kết hợp tập trung & phân tán hiệu năng cao.</li>
+                    <li>Ứng dụng AI xử lý hình ảnh, nhận diện biển số & khuôn mặt.</li>
+                    <li>Định hướng sản phẩm, điều phối nhóm & kế hoạch kiểm thử hệ thống.</li>
+                    <li class="hobby-line"><strong>Sở thích:</strong> Anime, Manga, Pop Ballad, Rock, FPS, Sci-Fi, Kamen Rider.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Member 2: Phạm Ngọc Hoài Anh (Chúa tể Voucher) -->
+              <div class="member-holo-card card-voucher" id="card-member-2">
+                <div class="card-energy-aura aura-green"></div>
+                <div class="member-photo-frame frame-green">
+                  <img src="PI01945.jpg" alt="Phạm Ngọc Hoài Anh" id="photo-img-2" class="member-photo-img">
+                  <div class="photo-scan-line line-green"></div>
+                  <div class="photo-badge-overlay">UI/UX & DEVOPS</div>
+                </div>
+
+                <div class="member-info">
+                  <div class="member-header-row">
+                    <span class="member-id-tag tag-green">MSSV: PI01945</span>
+                    <span class="member-specialty">CROSS-PLATFORM & CI/CD</span>
+                  </div>
+                  <div class="member-name">PHẠM NGỌC HOÀI ANH</div>
+                  <div class="member-alias">Codename: <span>Chúa tể Voucher</span></div>
+                  <div class="member-role">Frontend Developer • DevOps • Automation Tester</div>
+                  <ul class="member-tasks">
+                    <li>Thiết kế giao diện trực quan, hiện đại, tối ưu PC, Tablet, Mobile.</li>
+                    <li>Nghiên cứu, đề xuất & tích hợp thiết bị ngoại vi vào hệ thống.</li>
+                    <li>Triển khai giải pháp kiểm thử tự động, DevOps & tài liệu kỹ thuật.</li>
+                    <li class="hobby-line"><strong>Sở thích:</strong> Thiết bị công nghệ, Khám phá thiên nhiên, Anime, Manga, Âm nhạc.</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Call to Action Finale Bar -->
+            <div class="cta-final-box" id="scene-5-cta">
+              <div class="cta-brand-crest">
+                <span class="crest-dot"></span>
+                <span>ASDS2501 CORE TEAM</span>
+              </div>
+              <div class="cta-tagline">
+                V-SHIELD – <span>AN NINH VỮNG CHẮC, QUẢN TRỊ TƯƠNG LAI</span>
+              </div>
+              <button class="cta-contact-btn" onclick="alert('Cảm ơn bạn đã quan tâm đến hệ thống V-Shield!\nLiên hệ nhóm ASDS2501: Phạm Văn Thành (PI00336) & Phạm Ngọc Hoài Anh (PI01945).');">
+                LIÊN HỆ HỢP TÁC NGAY
+              </button>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Dynamic Subtitle Banner (Dedicated Bottom Strip, Never Covered) -->
+      <div class="subtitle-box">
+        <div class="subtitle-text" id="subtitle-text">
+          V-Shield – Giải pháp quản lý an ninh thông minh cho doanh nghiệp.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Background Audio Element with User's Music Track -->
+    <audio id="bgm-audio" src="bgm_60s.mp3" preload="auto"></audio>
+
+    <!-- Video Timeline Controls Dock -->
+    <div class="studio-controls">
+      
+      <!-- Interactive Scrubber Bar -->
+      <div class="timeline-track-container" id="timeline-track">
+        <div class="timeline-progress-rail">
+          <div class="timeline-progress-fill" id="progress-fill"></div>
+        </div>
+
+        <div class="timeline-markers">
+          <div class="marker" style="left: 0%;" data-label="Cảnh 1: Giới thiệu"></div>
+          <div class="marker" style="left: 16.66%;" data-label="Cảnh 2: Thách thức"></div>
+          <div class="marker" style="left: 36.66%;" data-label="Cảnh 3: AI Cổng & Xe"></div>
+          <div class="marker" style="left: 66.66%;" data-label="Cảnh 4: Phân quyền"></div>
+          <div class="marker" style="left: 83.33%;" data-label="Cảnh 5: Đội ngũ"></div>
+        </div>
+
+        <div class="timeline-scrub-thumb" id="scrub-thumb"></div>
+      </div>
+
+      <!-- Controls Buttons Row -->
+      <div class="controls-bottom-bar">
+        
+        <div class="controls-left">
+          <button class="ctrl-btn btn-play" id="btn-play">
+            <span>▶</span> PHÁT VIDEO
+          </button>
+          <button class="ctrl-btn" id="btn-restart" title="Phát lại từ đầu">
+            <span>↺</span>
+          </button>
+          <span class="timer-label" id="time-display">00:00 / 01:00</span>
+        </div>
+
+        <div class="scene-jump-group">
+          <button class="scene-pill active" data-scene="1" data-time="0">1. Giới thiệu</button>
+          <button class="scene-pill" data-scene="2" data-time="10">2. Hiện trạng</button>
+          <button class="scene-pill" data-scene="3" data-time="22">3. Đột phá AI</button>
+          <button class="scene-pill" data-scene="4" data-time="40">4. Phân quyền</button>
+          <button class="scene-pill" data-scene="5" data-time="50">5. Đội ngũ</button>
+        </div>
+
+        <div class="controls-right">
+          <button class="ctrl-btn active" id="btn-audio" title="Bật/Tắt nhạc nền & hiệu ứng âm thanh">
+            <span>🔊</span> Âm thanh: BẬT
+          </button>
+          <button class="ctrl-btn" id="btn-voice" title="Bật/Tắt giọng đọc thuyết minh tiếng Việt">
+            <span>🎙</span> Thuyết minh: TẮT
+          </button>
+
+          <select class="speed-select" id="speed-select" title="Tốc độ phát">
+            <option value="0.75">0.75x</option>
+            <option value="1.0" selected>1.0x</option>
+            <option value="1.25">1.25x</option>
+            <option value="1.5">1.5x</option>
+          </select>
+
+          <button class="ctrl-btn btn-export" id="btn-export" title="Ghi hình và tải video về máy">
+            <span>💾</span> XUẤT VIDEO (60s)
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/speech.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/recorder.js"></script>
+
+</body>
+</html>
